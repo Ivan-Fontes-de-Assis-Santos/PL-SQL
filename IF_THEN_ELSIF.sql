@@ -1,0 +1,20 @@
+--APLICANDO IF THEN ELSIF--
+DECLARE
+    V_COL1 TABELA1.COL1%TYPE;
+    V_TAMANHO NUMBER(3);
+BEGIN
+    SELECT LENGTH(COL1), COL1
+    INTO V_TAMANHO, V_COL1
+    FROM TABELA1;
+    
+    IF V_TAMANHO > 25 THEN
+        DBMS_OUTPUT.PUT_LINE ('Texto = ' || V_COL1);
+    ELSIF V_TAMANHO > 20 THEN
+        DBMS_OUTPUT.PUT_LINE ('Texto maior que 20');
+    ELSIF V_TAMANHO > 15 THEN
+        DBMS_OUTPUT.PUT_LINE ('Texto maior que 15');
+    ELSE 
+        DBMS_OUTPUT.PUT_LINE ('Texto menor ou igual a 15');
+    END IF;
+END;
+/
