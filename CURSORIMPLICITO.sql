@@ -1,0 +1,4 @@
+-- %FOUND retorna verdadeiro(TRUE) caso alguma linha (TUPLA) tenha sido afetada --
+-- %ISOPEN retorna verdadeiro(TRUE) caso o CURSOR esteja aberto --
+-- %NOTFOUND retorna verdadeiro(TRUE) caso não tenha encontrado nenhu --
+-- %ROWCOUNT retorna o número de tuplas do CURSOR --
